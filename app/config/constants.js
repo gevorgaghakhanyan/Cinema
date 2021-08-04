@@ -1,0 +1,12 @@
+module.exports = {
+  HTTP_STATUS: {
+    CREATED: 201,
+    SUCCESS: 200,
+    NO_CONTENT: 204,
+    UNPROCESSABLE_ENTITIES: 422,
+    BAD_REQUEST: 400,
+    NOT_ALLOWED: 403,
+    NOT_AUTHORIZED: 401,
+    NOT_FOUND: 404,
+  },
+};

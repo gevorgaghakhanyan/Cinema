@@ -1,0 +1,32 @@
+{
+  "name": "cinema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon cinema",
+    "start": "node cinema",
+    "migrate": "./node_modules/.bin/sequelize db:migrate",
+    "migration:generate": "./node_modules/.bin/sequelize migration:generate --name",
+    "migrate:undo": "./node_modules/.bin/sequelize db:migrate:undo",
+    "migrate:undo:all": "./node_modules/.bin/sequelize db:migrate:undo:all",
+    "seed": "node_modules/.bin/sequelize db:seed:all",
+    "seed:generate": "node_modules/.bin/sequelize seed:generate --name",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gevorg",
+  "license": "ISC",
+  "dependencies": {
+    "asyncawait": "^3.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "password-hash": "^1.2.2",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "sequelize-cli": "^6.2.0"
+  }
+}
